@@ -14,9 +14,12 @@
     <div class="col-md-9">
       <p><strong>All Tweets</strong></p>
       <!-- display tweets here -->
-      {% for tweet in tweets %}
-        <li><a href="/users/{{tweet.name}}">{{tweet.name}}</a> - {{ tweet.text }}</li>
+
+      {% for tweet in list %}
+        <li><strong>{{tweet.name}}</strong></li>
+          <ul>{{tweet.text}}</ul>
       {% endfor %}
+      
     </div>
   </div>
     
